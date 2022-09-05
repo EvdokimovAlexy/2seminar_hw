@@ -1,14 +1,11 @@
-﻿int randomNum = new Random().Next(100,1000);
-Console.WriteLine(randomNum);
-int digitFirst = randomNum / 10;
-int digitSecond = digitFirst % 10;
-Console.WriteLine($"{digitSecond}");
+﻿Console.WriteLine("Введите  число");
+int numberA = Convert.ToInt32(Console.ReadLine());
+int firstdigit = multiply(numberA);
 
-int FindMax(int num1, int num2)
+Console.WriteLine(firstdigit);
+
+int multiply (int num1)
 {
-    if(num1 > num2)
-    {
-return num1;
-    }
-return num1;
+    return (num1 /10) %10;
+             
 }
